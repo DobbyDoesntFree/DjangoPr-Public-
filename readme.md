@@ -801,7 +801,7 @@ urlpatterns = [
 - ReadonlyModelserializer
 - Router (Cheat for urls.py)
 
-# Relationship
+# Relationship - serializer
 
 ## Showing everything
 
@@ -840,7 +840,13 @@ class RoomDetailSerializer(ModelSerializer):
     owner = TinyUserSerializer(read_only=True)
 ```
 
-4. Authenticate - Grab info by request
+# Transaction, Authentication
+
+```python
+from django.db import transaction
+
+
+```
 
 # TEST
 
